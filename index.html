@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Round Robin Typing Battle</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-container">
+    <h1>🏆 Round Robin Typing Battle 🏆</h1>
+
+    <div id="setup">
+      <label>Enter Player Names (comma separated):</label><br>
+      <input type="text" id="playerNames" placeholder="e.g. Srushti, Agadh, Sneh">
+      <button id="startGame">Start Game</button>
+    </div>
+
+    <div id="game" class="hidden">
+      <h2 id="roundInfo">Round 1</h2>
+      <h3 id="turnInfo"></h3>
+      <p>Type the word below as fast as you can!</p>
+      <div id="wordDisplay"></div>
+
+      <input type="text" id="wordInput" placeholder="Type here..." disabled>
+      <button id="submitWord">Submit</button>
+
+      <div id="result"></div>
+    </div>
+
+    <div id="scoreboard" class="hidden">
+      <h2>🏁 Final Scoreboard 🏁</h2>
+      <ul id="scoresList"></ul>
+      <button onclick="location.reload()">Restart</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
